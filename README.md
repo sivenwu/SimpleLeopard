@@ -15,18 +15,20 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
  **KeyWord**  retrofit,okhttp3,RxJava,download,upload...
  
  ### How to use it?
- #### First 
+ 
+ First 
  
  ``` java
  repositories {
     maven { url = 'https://dl.bintray.com/yuancloud/maven/' }
     ...
 }
-```
 
  compile 'cn.yuancloud.app:sleopardkit:1.0'
+ ```
  
   #### How to download some files?
+  
    ``` java
   DownLoadHelper downLoadHelper = new DownLoadHelper();
   downLoadHelper.downLoad(url, savePath, fileName, new IdownLoadProgress() {
@@ -48,8 +50,9 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
             }
         });
   ```
-  
+ 
     #### How to upload some files?
+    
     ``` java
     UploadHelper  uploadHelper = new UploadHelper();
     uploadHelper.upLoad(new FileUploadEnetity(url, fileList), new IProgress() {
@@ -77,3 +80,5 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
             }
         });
     ```
+    
+    #### Enjoy
