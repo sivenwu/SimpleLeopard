@@ -18,18 +18,18 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
  
 #### First 
  
- ``` java
+``` java
  repositories {
     maven { url = 'https://dl.bintray.com/yuancloud/maven/' }
     ...
 }
 
  compile 'cn.yuancloud.app:sleopardkit:1.0'
- ```
+```
  
- #### How to download some files?
+#### How to download some files?
   
-  ``` java
+``` java
   DownLoadHelper downLoadHelper = new DownLoadHelper();
   downLoadHelper.downLoad(url, savePath, fileName, new IdownLoadProgress() {
             @Override
@@ -49,11 +49,11 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
                 resultTv.setText("donload filed! ："+reason);
             }
         });
-  ```
+```
  
- #### How to upload some files?
+#### How to upload some files?
     
- ``` java
+``` java
     UploadHelper  uploadHelper = new UploadHelper();
     uploadHelper.upLoad(new FileUploadEnetity(url, fileList), new IProgress() {
             @Override
@@ -79,6 +79,6 @@ Blog : http://www.jianshu.com/users/d388bcf9c4d3/
                 resultTv.setText("onFailed\n\n"+reason);
             }
         });
-    ```
+```
    
 #### Enjoy
